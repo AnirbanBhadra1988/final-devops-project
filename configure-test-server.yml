@@ -12,10 +12,10 @@
     command: sudo systemctl start docker
 
   - name: stop container
-    commnad: sudo docker stop insure-me
+    command: sudo docker stop insure-me
 
   - name: remove container
-    commnad: sudo docker rm insure-me
+    command: sudo docker rm insure-me
 
   - name: deploy insureme application
     command: sudo docker run -itd -p 8081:8081 --name insure-me anirban5/insure-me:1.0
